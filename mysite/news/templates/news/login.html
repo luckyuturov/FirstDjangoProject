@@ -1,0 +1,21 @@
+{% extends 'base.html' %}  <!--Наследуется от шаблона base.html-->
+
+{% block title %}
+  Авторизация :: {{ block.super }}
+{% endblock %}
+
+{% block sidebar %}
+{% comment %}
+{% include 'inc/_sidebar.html' %}
+{% endcomment %}
+{% endblock %}
+
+{% block content %}
+<h1>Авторизация</h1>
+
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary btn-block">Войти</button>
+</form>
+{% endblock %}
