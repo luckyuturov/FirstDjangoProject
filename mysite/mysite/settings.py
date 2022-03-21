@@ -143,8 +143,8 @@ INTERNAL_IPS = ["127.0.0.1"]
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'mega.lucky.uturov@gmail.com'
-EMAIL_HOST_PASSWORD = '121200Lucky'
+EMAIL_HOST_USER = 'your email'
+EMAIL_HOST_PASSWORD = 'email password'
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
